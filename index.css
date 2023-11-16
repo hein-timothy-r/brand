@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+    background-color: #008080;
+    letter-spacing: .04em;
+}
+
+.container, footer {
+  max-width: 1200px;
+}
+
+section:not(.container.hero):not(.hamburger-menu):not(.pages):not(footer section) {
+    margin: 4em auto;
+}
+
+header {
+    height: 48px;
+    width: 100%;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header img {
+  height: 64px;
+  width: auto;
+}
+
+header .line {
+  height: 4px;
+  width: 40px;
+  background-color: black;
+  display: grid;
+  margin-bottom: 4px;
+}
+
+.hero {
+    background-size: cover;
+    height: 832px;
+    max-width: 100%;
+    margin-top: -6rem;
+    display: flex;
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0) 72%, rgba(255, 255, 255, 1) 100% ), url(img/mountains.jpg);
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 64px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-top: -2em;
+    margin-bottom: .5em;
+}
+
+.hero h3 {
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: #fff;
+}
+
+.content-group {
+    display: flex;
+    justify-content: center;
+}
+
+.content-group .skills, .content-group .seo {
+    width: 16em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2em;
+    justify-content: center;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.divider {
+    width: 8px;
+    background-color: #fff;
+}
+
+footer {
+    width: 100%;
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em auto;
+}
+
+footer .pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1em auto;
+}
+
+footer img {
+    height: 64px;
+    width: auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: .25em;
+    letter-spacing: .04em;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 16em;
+}
